@@ -1,0 +1,121 @@
+<div class="container">
+    <div class="row mt-3">
+        <div class="col-md-8">
+            <div class="card shadow">
+                <div class="row p-3">
+                    <div class="col-md-3">
+                        <img class="img-fluid" src="./assets/5.png" alt="pizza">
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="fw-bold">Sandwich</h3>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <star-rating [value]="4.2" [totalstars]="5" checkedcolor="red" uncheckedcolor="black"
+                                size="24px" [readonly]="false"></star-rating>
+                            <span class="">🕑 12 min</span>
+                        </div>
+                        <div class="mb-2">
+                            <span class="badge rounded-pill bg-warning text-dark me-1">sandwich</span>
+                            <span class="badge rounded-pill bg-warning text-dark me-1">fast food</span>
+                            <span class="badge rounded-pill bg-warning text-dark me-1">food</span>
+                        </div>
+                        <h5><span class="badge bg-danger fw-bold mb-0 mt-2">₹100</span></h5>
+                    </div>
+                    <div class="col-md-3">
+                        <select #quantitySelect class="form-select" aria-label="Default select example">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                        </select>
+                        <button class="btn btn-danger mt-3">Remove</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card shadow mt-3">
+                <div class="row p-3">
+                    <div class="col-md-3">
+                        <img class="img-fluid" src="./assets/4.png" alt="pizza">
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="fw-bold">Pizza</h3>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <star-rating [value]="4.2" [totalstars]="5" checkedcolor="red" uncheckedcolor="black"
+                                size="24px" [readonly]="false"></star-rating>
+                            <span class="">🕑 10 min</span>
+                        </div>
+                        <div class="mb-2">
+                            <span class="badge rounded-pill bg-warning text-dark me-1">pizza</span>
+                            <span class="badge rounded-pill bg-warning text-dark me-1">fast food</span>
+                            <span class="badge rounded-pill bg-warning text-dark me-1">food</span>
+                        </div>
+                        <h5><span class="badge bg-danger fw-bold mb-0 mt-2">₹120</span></h5>
+                    </div>
+                    <div class="col-md-3">
+                        <select #quantitySelect class="form-select" aria-label="Default select example">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                        </select>
+                        <button class="btn btn-danger mt-3">Remove</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card shadow mt-3">
+                <div class="row p-3">
+                    <div class="col-md-3">
+                        <img class="img-fluid" src="./assets/6.png" alt="pizza">
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="fw-bold">Burger</h3>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <star-rating [value]="4.2" [totalstars]="5" checkedcolor="red" uncheckedcolor="black"
+                                size="24px" [readonly]="false"></star-rating>
+                            <span class="">🕑 10 min</span>
+                        </div>
+                        <div class="mb-2">
+                            <span class="badge rounded-pill bg-warning text-dark me-1">burger</span>
+                            <span class="badge rounded-pill bg-warning text-dark me-1">fast food</span>
+                            <span class="badge rounded-pill bg-warning text-dark me-1">food</span>
+                        </div>
+                        <h5><span class="badge bg-danger fw-bold mb-0 mt-2">₹99</span></h5>
+                    </div>
+                    <div class="col-md-3">
+                        <select #quantitySelect class="form-select" aria-label="Default select example">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                        </select>
+                        <button class="btn btn-danger mt-3">Remove</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card p-3 shadow">
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span>Transaction code</span>
+                        <p class="mb-0 h6 fw-light">AB12365E</p>
+                    </div>
+                    <div class="input-group mt-2">
+                        <input class="form-control form-control" placeholder="COUPON CODE">
+                        <button type="button" class="btn btn-danger">Apply</button>
+                    </div>
+
+                </div>
+                <h3> Total Count : 3</h3>
+                <h3> Total Price : 319/-</h3>
+                <button class="btn btn-danger mt-3" routerLink="/checkout">Proceed to Check Out</button>
+
+            </div>
+        </div>
+    </div>
+</div>

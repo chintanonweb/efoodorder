@@ -1,0 +1,180 @@
+<div class="container">
+    <div class="row mt-3">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <form class="d-flex">
+                <input class="form-control search-rounded" type="text" placeholder="Search Food Items " aria-label="Search"
+                    name="searchItem">
+                <button class="btn btn-danger searchbtn" type="submit">Search</button>
+            </form>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 mt-3">
+            <div class="card h-100 hovereffect">
+                <a routerLink="foodpage" class="text-decoration-none">
+                    <img src="./assets/1.png" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h5 class="card-title fw-bold mb-0">Panneer Tika</h5>
+                            <span class="wishlist">
+                                <span class="text-danger">♥</span>
+                            </span>
+                        </div>
+                        <star-rating [value]="4" [totalstars]="5" checkedcolor="red" uncheckedcolor="black" size="24px"
+                            [readonly]="false" (rate)="onRate($event)"></star-rating>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h5><span class="badge bg-danger fw-bold mb-0">180/-</span></h5>
+                            <span class="">🕑 15 min</span>
+                        </div>
+                        <span class="badge rounded-pill bg-warning text-dark me-1">paneer</span>
+                        <span class="badge rounded-pill bg-warning text-dark me-1">fast food</span>
+                        <span class="badge rounded-pill bg-warning text-dark me-1">food</span>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-4 mt-3">
+            <div class="card h-100 hovereffect">
+                <a routerLink="foodpage" class="text-decoration-none">
+                    <img src="./assets/2.png" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h5 class="card-title fw-bold mb-0">Pizza</h5>
+                            <span class="wishlist">
+                                <span class="text-danger">♥</span>
+                            </span>
+                        </div>
+                        <star-rating [value]="4.2" [totalstars]="5" checkedcolor="red" uncheckedcolor="black"
+                            size="24px" [readonly]="false" (rate)="onRate($event)"></star-rating>
+
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h5><span class="badge bg-danger fw-bold mb-0">120/-</span></h5>
+                            <span class="">🕑 12 min</span>
+                        </div>
+                        <span class="badge rounded-pill bg-warning text-dark me-1">pizza</span>
+                        <span class="badge rounded-pill bg-warning text-dark me-1">fast food</span>
+                        <span class="badge rounded-pill bg-warning text-dark me-1">food</span>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-4 mt-3">
+            <div class="card h-100 hovereffect">
+                <a routerLink="foodpage" class="text-decoration-none">
+                    <img src="./assets/3.png" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h5 class="card-title fw-bold mb-0">Pizza</h5>
+                            <span class="wishlist">
+                                <span class="text-danger">♥</span>
+                            </span>
+                        </div>
+                        <star-rating [value]="3.5" [totalstars]="5" checkedcolor="red" uncheckedcolor="black"
+                            size="24px" [readonly]="false" (rate)="onRate($event)"></star-rating>
+
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h5><span class="badge bg-danger fw-bold mb-0">110/-</span></h5>
+                            <span class="">🕑 10 min</span>
+                        </div>
+                        <span class="badge rounded-pill bg-warning text-dark me-1">pizza</span>
+                        <span class="badge rounded-pill bg-warning text-dark me-1">fast food</span>
+                        <span class="badge rounded-pill bg-warning text-dark me-1">food</span>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-4 mt-3">
+            <div class="card h-100 hovereffect">
+                <a routerLink="foodpage" class="text-decoration-none">
+                    <img src="./assets/4.png" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h5 class="card-title fw-bold mb-0">Veg Pizza</h5>
+                            <span class="wishlist">
+                                <span class="text-danger">♥</span>
+                            </span>
+                        </div>
+                        <star-rating [value]="4" [totalstars]="5" checkedcolor="red" uncheckedcolor="black" size="24px"
+                            [readonly]="false" (rate)="onRate($event)"></star-rating>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h5><span class="badge bg-danger fw-bold mb-0">149/-</span></h5>
+                            <span class="">🕑 15 min</span>
+                        </div>
+                        <span class="badge rounded-pill bg-warning text-dark me-1">pizza</span>
+                        <span class="badge rounded-pill bg-warning text-dark me-1">fast food</span>
+                        <span class="badge rounded-pill bg-warning text-dark me-1">food</span>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-4 mt-3">
+            <div class="card h-100 hovereffect">
+                <a routerLink="foodpage" class="text-decoration-none">
+                    <img src="./assets/5.png" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h5 class="card-title fw-bold mb-0">Sandwich</h5>
+                            <span class="wishlist">
+                                <span class="text-danger">♥</span>
+                            </span>
+                        </div>
+                        <star-rating [value]="4.2" [totalstars]="5" checkedcolor="red" uncheckedcolor="black"
+                            size="24px" [readonly]="false" (rate)="onRate($event)"></star-rating>
+
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h5><span class="badge bg-danger fw-bold mb-0">89/-</span></h5>
+                            <span class="">🕑 10 min</span>
+                        </div>
+                        <span class="badge rounded-pill bg-warning text-dark me-1">sandwich</span>
+                        <span class="badge rounded-pill bg-warning text-dark me-1">fast food</span>
+                        <span class="badge rounded-pill bg-warning text-dark me-1">food</span>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-4 mt-3">
+            <div class="card h-100 hovereffect">
+                <a routerLink="foodpage" class="text-decoration-none">
+                    <img src="./assets/3.png" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h5 class="card-title fw-bold mb-0">Pizza</h5>
+                            <span class="wishlist">
+                                <span class="text-danger">♥</span>
+                            </span>
+                        </div>
+                        <star-rating [value]="3.5" [totalstars]="5" checkedcolor="red" uncheckedcolor="black"
+                            size="24px" [readonly]="false" (rate)="onRate($event)"></star-rating>
+
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h5><span class="badge bg-danger fw-bold mb-0">110/-</span></h5>
+                            <span class="">🕑 10 min</span>
+                        </div>
+                        <span class="badge rounded-pill bg-warning text-dark me-1">pizza</span>
+                        <span class="badge rounded-pill bg-warning text-dark me-1">fast food</span>
+                        <span class="badge rounded-pill bg-warning text-dark me-1">food</span>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
